@@ -1,0 +1,24 @@
+﻿@using WeAreDevelopers.Models.Components.IconNames
+@using WeAreDevelopers.Views.Bases
+@inherits LayoutComponentBase
+
+<LayoutBase>
+    <Header>
+        <a href="https://www.wearedevelopers.com/world-congress/" target="_blank" style="color:white">WeAreDevelopers World Congress 2024</a>
+        <SpacerBase />
+        <a href="https://mahdhi.com" target="_blank" style="color:white">mahdhi.com</a>
+    </Header>
+    <NavigationMenu>
+        <NavMenuBase>
+            <NavLinkBase Href="/" MatchAll=true Icon="IconName.Home" Text="Home" />
+        </NavMenuBase>
+    </NavigationMenu>
+    <Main>
+        @Body
+    </Main>
+    <Footer>
+        <a href="https://mahdhi.com" target="_blank">Mabrouk Mahdhi</a>
+        <SpacerBase />
+        <a href="https://dotnet.microsoft.com/en-us/live/on-dotnet-live" target="_blank">About On .NET Live</a>
+    </Footer>
+</LayoutBase>
