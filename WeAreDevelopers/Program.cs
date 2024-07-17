@@ -12,6 +12,7 @@ using WeAreDevelopers.Brokers.Apis;
 using WeAreDevelopers.Brokers.DateTimes;
 using WeAreDevelopers.Brokers.Loggings;
 using WeAreDevelopers.Brokers.Navigations;
+using WeAreDevelopers.Brokers.Notifications;
 using WeAreDevelopers.Services.Foundations.Navigations;
 using WeAreDevelopers.Services.Foundations.Talks;
 using WeAreDevelopers.Services.Views.TalkViews;
@@ -34,6 +35,7 @@ namespace WeAreDevelopers
             builder.Services.AddSingleton<ILoggingBroker, LoggingBroker>();
             builder.Services.AddScoped<IApiBroker, ApiBroker>();
             builder.Services.AddScoped<INavigationBroker, NavigationBroker>();
+            builder.Services.AddScoped<INotificationBroker, NotificationBroker>();
 
             builder.Services.AddScoped<ITalkService, TalkService>();
             builder.Services.AddScoped<INavigationService, NavigationService>();
