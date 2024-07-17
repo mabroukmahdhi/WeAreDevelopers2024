@@ -11,9 +11,17 @@ namespace WeAreDevelopers.Views.Components.RegisterComponents
     {
         private string attendeeName { get; set; }
 
+        private string test;
         override protected void OnInitialized()
         {
             attendeeName = "Change me";
+        }
+
+         
+        private void AddAttendee()
+        {
+            
+            StateHasChanged();
         }
     }
 }

@@ -1,5 +1,4 @@
 ﻿@using WeAreDevelopers.Views.Bases
 
-@attendeeName
-
-<TextBoxBase @bind-Text="@attendeeName" />
+<TextBoxBase Label="Attendee name" @bind-Text="@attendeeName" />
+<ButtonBase Text="Register" OnClick="AddAttendee"/> 
